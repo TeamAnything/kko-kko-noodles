@@ -1,5 +1,6 @@
 package org.ddeadbeat.kkokkonoodles.member.domain;
 
+import org.ddeadbeat.kkokkonoodles.member.domain.vo.Email;
 import org.ddeadbeat.kkokkonoodles.member.domain.vo.Name;
 
 import jakarta.persistence.Embedded;
@@ -22,4 +23,7 @@ public class Member {
 
 	@Embedded
 	private Name name;
+
+	@Embedded
+	private Email email;
 }
